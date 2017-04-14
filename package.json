@@ -21,9 +21,13 @@
   "author": "Joe Turner <jturner@thinkful.com>",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.17.1",
+    "chai": "^3.5.0",
     "cross-env": "^3.1.4",
-    "express": "^4.14.1",
+    "express": "^4.15.2",
     "http-proxy-middleware": "^0.17.3",
+    "mocha": "^3.2.0",
+    "mongoose": "^4.9.4",
     "npm-run-all": "^4.0.1",
     "xp": "^1.0.1"
   }

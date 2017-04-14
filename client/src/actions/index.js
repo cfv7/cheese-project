@@ -17,7 +17,6 @@ export const getCheeses = () => dispatch => {
     return cheeses.json()
   })
   .then(data => {
-      console.log(data.cheeses)
       dispatch(fetchCheeseSuccess(data.cheeses))
   })
 }
