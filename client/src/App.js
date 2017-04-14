@@ -14,7 +14,7 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h2>Cheeses</h2>
+          <h2>Welcome to the Cheese List</h2>
         </div>
         <p className="App-intro">
           Here's a list of some great British cheeses! 

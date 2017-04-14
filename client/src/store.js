@@ -3,4 +3,8 @@ import thunk from 'redux-thunk'
 
 import {cheesesReducer} from './reducers'
 
-export default createStore(cheesesReducer, applyMiddleware(thunk))
+export default createStore(
+  cheesesReducer, 
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
+  applyMiddleware(thunk)
+);

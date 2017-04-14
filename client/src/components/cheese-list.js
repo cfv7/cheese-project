@@ -2,12 +2,20 @@ import React from 'react'
 import {connect} from 'react-redux'
 
 export function CheeseList(props) {
-  console.log(props.cheeses[0])
-  const cheeses = props.cheeses.map((cheese, index)=> 
-    <li key={index}>{cheese[0]}</li>
-  )
-  console.log(cheeses)
-  return (<ul> {cheeses} </ul>);
+  let cheeses;
+  console.log(props);
+  if (typeof props.cheeses !== 'undefined') {
+    cheeses = props.cheeses.map((cheese, index) => 
+      <li key={index}>{cheese.cheeseType}</li>
+    )
+  }
+  return (
+    <div className='container'> 
+      <ul>
+        {cheeses}
+      </ul>
+    </div>
+  );
 }
 
 const mapStateToProps = state => ({
